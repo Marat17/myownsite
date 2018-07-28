@@ -1,3 +1,6 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
 {% if alltheposts %}
     <ul>
     {% for blogpost in alltheposts %}
