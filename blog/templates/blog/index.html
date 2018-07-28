@@ -1,0 +1,9 @@
+{% if alltheposts %}
+    <ul>
+    {% for blogpost in alltheposts %}
+        <li>{{ blogpost.post_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No posts are available.</p>
+{% endif %}
