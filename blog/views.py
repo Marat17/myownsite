@@ -2,9 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from blog.models import BlogPost
 from django.template import loader
+from django.utils import timezone
 
 def index(request):
-	alltheposts = BlogPost.objects.order_by('-post_date')
+	alltheposts = BlogPost.objects.filter(post_date__lte=timezone.now()).order_by('-post_date')
 	context = {
 		'alltheposts' : alltheposts,
 	}
