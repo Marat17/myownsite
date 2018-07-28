@@ -11,6 +11,6 @@ def index(request):
 	return render(request, 'blog/index.html', context)
 
 def about(request):
-	return HttpResponse("here you'll see some info about this blog")
+	return render(request, 'blog/about.html')
 
 # Create your views here.
