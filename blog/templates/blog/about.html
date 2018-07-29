@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
+
 	<title>About the blog</title>
-</head>
-<body>
-This is the page, that tells you about the blog. I hope I could make it look nice.
-</body>
-</html>
+
+
+<h1>About the Blog</h1>
+<p>This is the first project that I completed on my own. I am proud and happy.</p>
+
+<a href="{% url 'index' %}">To the main page</a>

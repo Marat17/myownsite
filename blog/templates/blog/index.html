@@ -1,15 +1,17 @@
 {% load static %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
+<title>The Main Page</title>
 
-<h1> Let's just see if CSS works </h1>
+<h1> Blog </h1>
 
 {% if alltheposts %}
     <ul>
     {% for blogpost in alltheposts %}
-        <li>{{ blogpost.post_text }}</li>
+        <li><p>{{ blogpost.post_text }}</p> Posted on {{ blogpost.post_date }}</li><hr>
     {% endfor %}
     </ul>
 {% else %}
     <p>No posts are available.</p>
 {% endif %}
+<a href="{% url 'about' %}">To the 'about' page</a>
