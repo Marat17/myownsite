@@ -1,14 +1,13 @@
-<!DOCTYPE html>
 {% load static %}
-<html>
-<head>
-	<title>Main page</title>
-</head>
+
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
+
+<h1> Let's just see if CSS works </h1>
 
 {% if alltheposts %}
     <ul>
     {% for blogpost in alltheposts %}
-        <li>{{ blogpost.post_text }}</a></li>
+        <li>{{ blogpost.post_text }}</li>
     {% endfor %}
     </ul>
 {% else %}
