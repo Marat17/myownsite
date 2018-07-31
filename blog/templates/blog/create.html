@@ -1,11 +1,14 @@
 <!DOCTYPE html>
+<html>
+<head>
 {% load static %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
-	<title>Blog</title>
+<title>New Post</title>
+</head>
 
 <body>
-	<h1>Add a Post</h1>
+<h1 font-size:100>Add a Post</h1>
 	<div>
 		<form id='create_form' method = 'post'>
 		{% csrf_token %}
@@ -22,3 +25,5 @@
 </body>
 
 <a href="{% url 'index' %}">To the main page</a>
+
+</html>

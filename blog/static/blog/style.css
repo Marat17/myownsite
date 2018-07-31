@@ -1,15 +1,12 @@
 h1 {
     color: #8B0000;
-    font-size:100;
 }
 p {
 	color: #E9967A;
-	font-size:40;
 }
 body {
     background: white url("images/background.jpg") no-repeat;
 }
 a {
 	color: #8FBC8F;
-	font-size:25;
 }

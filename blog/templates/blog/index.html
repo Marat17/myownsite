@@ -1,7 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
 {% load static %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
-<title>The Main Page</title>
+	<title>Blog</title>
+
+</head>
+<body>
 
 <h1> Blog </h1>
 
@@ -14,8 +20,10 @@
 {% else %}
     <p>No posts are available.</p>
 {% endif %}
+</body>
 
 <a href="{% url 'create' %}">Create a post</a><br>
 
 <a href="{% url 'about' %}">To the 'about' page</a>
+</html>
 
