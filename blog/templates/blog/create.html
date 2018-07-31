@@ -6,7 +6,7 @@
 <body>
 	<h1>Add a Post</h1>
 	<div>
-		<form id='create_form' method = 'post' action-'/blog/create/'>
+		<form id='create_form' method = 'post'>
 		{% csrf_token %}
 		{% for field in form.visible_fields %}
 			{{ field.errors }}
